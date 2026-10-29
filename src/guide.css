@@ -1,0 +1,51 @@
+/* Hallmark Â· v2.0.0 Â· Garden Â· genre: editorial Â· redesign: full */
+/* Critique: route-specific guidance replaces generic promotional proof. */
+.how-section { margin-top: var(--space-4xl); padding-top: var(--space-3xl); border-top: 1px solid var(--rule); }
+.guide-heading { display: flex; align-items: end; justify-content: space-between; gap: var(--space-2xl); margin-bottom: var(--space-2xl); }
+.guide-heading h2 { max-width: 520px; }
+.guide-heading p { max-width: 360px; color: var(--muted); font-size: 16px; }
+.how-steps { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: var(--gap); list-style: decimal; padding: 0 0 0 var(--space-lg); margin: 0 0 var(--space-lg); }
+.how-steps li { padding-left: var(--space-sm); padding-right: var(--space-lg); color: var(--ink); }
+.how-steps li::marker { font-size: 20px; font-weight: 500; }
+.how-steps p { margin-top: var(--space-md); font-size: 14px; color: var(--muted); max-width: 45ch; }
+.route-guide { margin-top: var(--space-4xl); }
+.route-guide-list { border-top: 1px solid var(--field-edge); }
+.route-guide-row { width: 100%; display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr) 24px; gap: var(--gap); align-items: center; text-align: left; padding: var(--space-xl) 0; border-bottom: 1px solid var(--rule); }
+.route-guide-row:hover { background: var(--moss); }
+.route-place { display: block; font-size: 14px; color: var(--muted); margin-bottom: var(--space-sm); }
+.route-guide-row strong { font-size: 24px; font-weight: 500; color: var(--ink); letter-spacing: -.025em; }
+.route-guide-note { color: var(--muted); font-size: 14px; max-width: 45ch; }
+.safety-band { margin-top: var(--space-4xl); padding-block: var(--space-3xl); background: var(--ink); color: var(--paper); }
+.safety-inner { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--gap); align-items: center; }
+.safety-band h2 { color: var(--paper); }
+.safety-band p { margin-top: var(--space-lg); font-size: 14px; max-width: 60ch; }
+.safety-band ul { list-style: none; padding: 0; margin: 0; }
+.safety-band li { padding: var(--space-md) 0; border-bottom: 1px solid var(--field-edge); }
+.safety-band .safety-disclosure { grid-column: 1 / -1; font-size: 12px; color: var(--paper-deep); }
+.faq-section { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.4fr); gap: var(--gap); margin-top: var(--space-4xl); }
+.faq-section > div > p { margin-top: var(--space-lg); }
+.faq-list details, .footer-information details { border-bottom: 1px solid var(--rule); }
+summary { cursor: pointer; color: var(--ink); font-weight: 500; padding-block: var(--space-lg); }
+summary:hover { color: var(--green); }
+details p { margin-bottom: var(--space-lg); font-size: 14px; color: var(--muted); max-width: 65ch; }
+.footer-controls > a { display: inline-block; margin-left: var(--space-lg); font-size: 14px; padding-block: var(--space-sm); }
+.footer-controls > button { margin-left: var(--space-lg); }
+.footer-information { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); align-items: start; gap: var(--gap); }
+.footer-information a { display: inline-block; margin-bottom: var(--space-md); font-size: 14px; }
+.footer-information summary { font-size: 14px; }
+@media (max-width: 700px) {
+.guide-heading { flex-direction: column; align-items: start; gap: var(--space-lg); margin-bottom: var(--space-xl); }
+.how-section { margin-top: var(--space-3xl); padding-top: var(--space-2xl); }
+.how-steps { grid-template-columns: minmax(0,1fr); gap: var(--space-xl); }
+.how-steps li { padding-right: 0; }
+.route-guide, .safety-band, .faq-section { margin-top: var(--space-3xl); }
+.route-guide-row { grid-template-columns: minmax(0,1fr) 24px; gap: var(--space-md); }
+.route-guide-note { grid-column: 1; grid-row: 2; }
+.route-guide-row > svg { grid-column: 2; grid-row: 1 / 3; }
+.safety-inner, .faq-section { grid-template-columns: minmax(0,1fr); }
+.safety-band { padding-block: var(--space-2xl); }
+.footer-information { grid-template-columns: minmax(0,1fr); gap: 0; }
+.footer-controls > a, .footer-controls > button { margin-left: 0; margin-right: var(--space-md); }
+.site-footer { grid-template-columns: minmax(0,1fr); }
+.footer-controls { text-align: left; }
+}

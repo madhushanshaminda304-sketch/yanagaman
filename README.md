@@ -24,7 +24,7 @@ Browser checks require Chrome/Chromium; set CHROME_PATH if it is not installed i
 - No identity, phone, location, or payment information is collected. No API requests or analytics are used. Fonts and images are hosted locally.
 - All fares and meeting points are illustrative. No verification, emergency response, or live tracking is provided.
 
-The replaceable adapter in src/services/demoService.ts owns demo data and validation. The legacy server/ and Docker files are preserved for future development but are not used by the preview. They are not production-ready services and must not be exposed to passengers.
+The replaceable adapter in src/services/demoService.ts owns demo data and validation. Legacy server, Docker, and identity-related fixture files are preserved only in the original local project. They are excluded from this public repository and deployment. No legacy API is used by the preview.
 
 ## Deployment
 Deploy dist as a free Render Static Site. See DEPLOYMENT.md and render.yaml. Do not deploy the SQLite backend for this release.
